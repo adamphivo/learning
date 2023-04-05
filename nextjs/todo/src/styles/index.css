@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+}
+
+nav {
+  background: rgb(32, 33, 36);
+}
