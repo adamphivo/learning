@@ -1,0 +1,16 @@
+button {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition-duration: 0.2s;
+  background: black;
+  color: whitesmoke;
+}
+
+button:hover {
+  color: black;
+  background: whitesmoke;
+  cursor: pointer;
+}
