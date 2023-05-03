@@ -1,0 +1,46 @@
+# This is an example OpenAPI Document
+# openapi field -> indicates the OAS version
+openapi: "3.1.0"
+info:
+  # Title of the API
+  title: "Example API"
+  # Version of the API
+  version: "1.0.0"
+# Describes ALL the paths of the api (endpoints)
+# It describes input and all possible server responses
+paths:
+  # A path
+  /users: 
+    get:
+      summary: "A summary"
+      description: "A Description"
+      responses:
+        "200":
+          description: "All good !"
+          content: 
+            application/json:
+              schema: 
+                type: Object
+                properties:
+                  message:
+                    type: string
+                    value: "All is GOOD !"
+        "404":
+          description: "Not found !"
+          content:
+            application/json:
+              schema:
+                type: Object
+                properties:
+                  message:
+                    type: string
+                    value: "Not found !"
+    put:
+      summary: "Another summary"
+      description: "Another description"
+      reponse: 
+        "200":
+        "404":
+    delete:
+      summary: "Summary"
+      description: "Description"
