@@ -44,3 +44,38 @@ paths:
     delete:
       summary: "Summary"
       description: "Description"
+  # Using a component
+  /test:
+    get:
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/response"
+  /post:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              $ref: "./components/schemas/Post.yml"
+      responses:
+        "200":
+          description: "toto"
+          content:
+            application/json:
+              schema:
+              $ref: "#components/schemas/response"
+
+# Describing a reusable component
+components:
+  schemas:
+    response:
+      type: Object
+      properties: 
+        statusCode:
+          type: string
+        message:
+          type: string
