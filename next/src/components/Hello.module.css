@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+}
+
+.wrapper p {
+  color: rgb(231, 230, 230);
+}
